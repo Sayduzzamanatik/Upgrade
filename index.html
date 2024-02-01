@@ -1,16 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body {background-color:black; text-align:center;}
-</style>
-<title>HTML Tutorial</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Company Name</title>
 </head>
-<body style="background-color:orange;">
-<!-- <body style="background-color:orange;"> -->
-  
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+<body>
+    <header>
+        <div class="logo">Your Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products/Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <div class="header-image">Header Image/Slider</div>
+        <div class="company-info">
+            <h1>Company Name</h1>
+            <p>Short Description/Tagline</p>
+        </div>
+    </section>
+
+    <section class="search-bar">
+        <input type="text" placeholder="Search...">
+    </section>
+
+    <!-- Other sections and content here -->
+
+    <footer>
+        <div class="contact-info">
+            <p>Phone: Your Phone Number</p>
+            <p>Email: Your Support Email</p>
+        </div>
+        <div class="business-hours">
+            <p>Business Hours: Your Business Hours</p>
+        </div>
+        <div class="quick-links">
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="social-media-icons">
+            <!-- Add your social media icons/links here -->
+        </div>
+        <div class="map">
+            <!-- Add your map here -->
+        </div>
+    </footer>
 </body>
 </html>
+CSS (styles.css):
+
+css
+Copy code
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #e0e0e0;
+}
+
+.header-image {
+    /* Add styles for header image/slider */
+}
+
+.company-info {
+    text-align: center;
+}
+
+/* Search bar styles */
+.search-bar {
+    text-align: center;
+    padding: 20px;
+    background-color: #d0d0d0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+}
