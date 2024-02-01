@@ -1,139 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Your Company Name</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ecf0f1;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .search-bar {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .description {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .internal-links {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <div class="logo">Your Logo</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products/Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <h1>Muslim Corporation</h1>
+        </div>
     </header>
 
-    <section class="hero">
-        <div class="header-image">Header Image/Slider</div>
-        <div class="company-info">
-            <h1>Company Name</h1>
-            <p>Short Description/Tagline</p>
-        </div>
-    </section>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products/Services</a>
+        <a href="#">Blog</a>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+    </nav>
 
     <section class="search-bar">
         <input type="text" placeholder="Search...">
     </section>
 
-    <!-- Other sections and content here -->
+    <section class="description">
+        <h2>Welcome to Muslim Corporations</h2>
+        <p>A commitment to excellence in Muslim Corporation. Discover the latest duas and Ways of the prophet.</p>
+    </section>
 
-    <footer>
-        <div class="contact-info">
-            <p>Phone: Your Phone Number</p>
-            <p>Email: Your Support Email</p>
-        </div>
-        <div class="business-hours">
-            <p>Business Hours: Your Business Hours</p>
-        </div>
-        <div class="quick-links">
-            <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </div>
-        <div class="social-media-icons">
-            <!-- Add your social media icons/links here -->
-        </div>
+    <section class="image">
+        <!-- Add your header or body image or video here -->
+        <img src="your-image-url.jpg" alt="Your Image">
+    </section>
+
+    <section class="internal-links">
+        <h2>Explore Our Teachings</h2>
+        <p>Discover our future duas and ways of the prophets.</p>
+        <!-- Add your internal links here -->
+    </section>
+
+    <footer class="footer">
         <div class="map">
             <!-- Add your map here -->
         </div>
+        <div class="business-hours">
+            <p><strong>Business Hours:</strong> Mon-Fri: 9 AM - 6 PM</p>
+        </div>
+        <div class="contact-info">
+            <p><strong>Contact Information:</strong> Phone: [Your Phone Number] | Email: [Your Support Email]</p>
+        </div>
+        <div class="social-media-icons">
+            <!-- Add your social media icons/links here -->
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Facebook</a>
+        </div>
+        <div class="team-careers">
+            <a href="#">Our Team</a> | <a href="#">Careers</a>
+        </div>
     </footer>
 </body>
+
 </html>
-CSS (styles.css):
-
-css
-Copy code
-/* Reset some default styles */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Header styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 15px;
-}
-
-/* Hero section styles */
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    background-color: #e0e0e0;
-}
-
-.header-image {
-    /* Add styles for header image/slider */
-}
-
-.company-info {
-    text-align: center;
-}
-
-/* Search bar styles */
-.search-bar {
-    text-align: center;
-    padding: 20px;
-    background-color: #d0d0d0;
-}
-
-/* Footer styles */
-footer {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-}
-
-footer ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-}
-
-footer a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 15px;
-}
